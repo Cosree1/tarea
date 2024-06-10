@@ -1,0 +1,36 @@
+#contenedor{
+    display:grid;
+    grid-template-areas: "header header header"
+                          "nav article section"
+                          "footer footer footer";
+    grid-template-columns: 1fr 3fr 3fr;
+    gap:10px;
+    width:75%;
+    margin:auto;
+
+}
+#contenedor div{
+    border:1px solid black
+}
+.cabecera{
+    background-color: lightskyblue;
+    grid-area: header;
+}
+.menu{
+    grid-area: nav;
+}
+.articulo{
+    background-color: beige;
+    grid-area: article;
+}
+.seccion{
+    background-color: antiquewhite;
+    grid-area: section;
+}
+.pie{
+    background-color: peachpuff;
+    grid-area: footer;
+}
+h1,h2,.pie{
+    text-align: center;
+}
